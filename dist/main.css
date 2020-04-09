@@ -77,7 +77,8 @@ a {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Styling the form... */
+/******************** Form Style *********************/
+
 .input-block {
   margin-bottom: 20px;
 }
@@ -87,9 +88,21 @@ input[type='email'],
 textarea {
   padding: 12px 20px;
   font-family: 'Roboto', sans-serif;
-  font-size: 0.85rem;
+  font-size: 1.3rem;
   width: 100%;
   box-sizing: border-box;
+
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+
+  border-radius: 10px;
+}
+
+input[type='text']::placeholder,
+input[type='email']::placeholder,
+textarea::placeholder {
+  color: white;
 }
 
 .newline-label {
@@ -109,19 +122,23 @@ input[type='submit'] {
   background-color: white;
   color: #fa4083;
   font-family: 'Playfair Display', serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-top: 20px;
   align-self: center;
   padding: 11px 25px;
+  border: 0;
 }
 
 form {
-  margin: 40px 0px;
+  padding: 40px 0px 1000px 0px;
 }
+
+/******************** End Form Style *********************/
 
 .cards {
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -175,10 +192,6 @@ form {
   box-sizing: border-box;
 }
 
-/* .tbox :last-child {
-    font-size:  0.8rem;
-} */
-
 .tbox p:last-of-type {
   font-size: 0.8rem;
   padding-left: 30px;
@@ -202,7 +215,7 @@ form {
   transition-duration: 1s;
 }
 
-/* Navigationg menu styling. */
+/* Navigation menu styling. */
 .navbutton {
   font-family: 'Playfair Display', serif;
   color: white;
@@ -239,3 +252,11 @@ form {
   transition-duration: 0.7s;
   font-size: 1.2rem;
 }
+
+/* @media (max-width: 768px) {
+  //TODO
+}
+
+@media (max-width: 400px) {
+  //TODO
+} */
